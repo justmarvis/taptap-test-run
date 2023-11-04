@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +16,14 @@ class LoginActivity : AppCompatActivity() {
         loginButton.setOnClickListener {
             // Create an Intent to open Chat activity
             val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
+
+        // create a redirect to main page
+        val bckButton = findViewById<ImageView>(R.id.loginBckBtn)
+        bckButton.setOnClickListener {
+            // Create an Intent to open Chat activity
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

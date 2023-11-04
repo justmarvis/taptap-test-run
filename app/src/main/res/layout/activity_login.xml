@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".LoginActivity">
 
     <!--Login Page title-->
@@ -25,6 +26,8 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="*******"
+        android:textColor="#000"
+        android:background="@drawable/text_area"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -38,6 +41,8 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="johndoe@example.com"
+        android:background="@drawable/text_area"
+        android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -52,6 +57,7 @@
         android:layout_height="wrap_content"
         android:text="Email"
         android:textSize="21sp"
+        android:textColor="#000"
         app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.061"
@@ -70,6 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#000"
         app:layout_constraintTop_toBottomOf="@+id/username"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -89,7 +96,7 @@
 
     <!--back button-->
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/loginBckBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
