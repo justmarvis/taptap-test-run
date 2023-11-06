@@ -46,6 +46,20 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+
+    // OkHttp for making HTTP requests
+    implementation ("com.squareup.okhttp3:okhttp:4.9.0")
+
+    // GSON for JSON parsing
+    implementation ("com.google.code.gson:gson:2.8.8")
+
+    // Stripe SDK
+    implementation("com.stripe:stripe-android:20.34.4")
+
+    implementation ("com.github.kittinunf.fuel:fuel:2.3.1")
+    implementation ("com.github.kittinunf.fuel:fuel-json:2.3.1")
+
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

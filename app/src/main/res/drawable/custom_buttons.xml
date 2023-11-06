@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <!-- res/drawable/custom_button.xml -->
-    <shape xmlns:android="http://schemas.android.com/apk/res/android">
-        <corners android:radius="5dp" /> <!-- Adjust the radius to make it rounded -->
-        <solid android:color="#000" /> <!-- Button background color -->
-    </shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- res/drawable/custom_button.xml -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="5dp" /> <!-- Adjust the radius to make it rounded -->
+            <solid android:color="#000" /> <!-- Button background color -->
+        </shape>
+    </item>
+</selector>

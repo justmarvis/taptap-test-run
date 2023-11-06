@@ -18,5 +18,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // create a redirect to Registration page
+        val regActButton = findViewById<Button>(R.id.lvRegisterBtn)
+        regActButton.setOnClickListener {
+            // Create an Intent to open the new activity
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
