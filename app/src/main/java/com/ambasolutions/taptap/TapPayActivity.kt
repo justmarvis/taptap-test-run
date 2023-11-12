@@ -11,6 +11,8 @@ class TapPayActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_tap_pay)
 
+        supportActionBar?.title = "Quick Pay"
+
         // create a redirect for back button
         val bckButton = findViewById<ImageView>(R.id.bckBtn)
         bckButton.setOnClickListener {

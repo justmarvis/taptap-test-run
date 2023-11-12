@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.hide()
+
         // create a redirect to login page
         val loginActButton = findViewById<Button>(R.id.lvLoginBtn)
         loginActButton.setOnClickListener {

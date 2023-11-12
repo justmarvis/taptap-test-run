@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Card background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card"
+        android:scaleType="centerCrop" />
+
+    <!-- Card number -->
+    <TextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="**** **** **** 1234"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <!-- Card holder name -->
+    <TextView
+        android:id="@+id/tvCardHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCardNumber"
+        android:layout_marginStart="20dp"
+        android:text="Cardholder Name"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Card expiry date -->
+    <TextView
+        android:id="@+id/tvExpiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCardHolderName"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="mm/yy"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Card expiry date -->
+    <TextView
+        android:id="@+id/tvCvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCardHolderName"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/tvExpiryDate"
+        android:text="cvv"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Visa logo -->
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/tvCvv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/baseline_wifi_24" />
+</RelativeLayout>

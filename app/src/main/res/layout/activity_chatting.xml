@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ChattingActivity">
+
+    <LinearLayout
+        android:id="@+id/proHead"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/accent1">
+
+        <ImageView
+            android:id="@+id/bckBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_back_ios_24"
+            android:backgroundTint="@color/tertiary"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Admin"
+            android:textSize="18sp"
+            android:layout_weight="90"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/call"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/baseline_videocam_24"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dots_verticle"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proHead"
+        android:layout_above="@+id/sender" />
+
+
+    <LinearLayout
+        android:id="@+id/sender"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/baseline_keyboard_arrow_up_24"
+                android:backgroundTint="@color/tertiary"
+                android:layout_gravity="bottom"/>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/baseline_attach_file_24"
+                android:layout_gravity="bottom"/>
+
+            <EditText
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/type_box"
+                android:hint="Type your message"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent2"
+                android:layout_weight="100"
+                android:layout_gravity="bottom" />
+
+
+        <ImageView
+            android:id="@+id/sndButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/circle_arrow_up_solid"
+            android:backgroundTint="@color/tertiary"
+            android:layout_gravity="bottom" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/sndButton"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:background="@drawable/baseline_mic_none_24"-->
+<!--            android:backgroundTint="@color/tertiary"-->
+<!--            android:layout_gravity="bottom" />-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -27,17 +27,17 @@
         android:id="@+id/password"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/text_area"
         android:hint="*******"
+        android:padding="15dp"
         android:textColor="#000"
         android:textColorHint="#d1d1d1"
-        android:background="@drawable/text_area"
-        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        app:layout_constraintVertical_bias="0.155" />
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.13999999" />
 
     <!--email input-->
 
@@ -46,7 +46,7 @@
     <!--password title-->
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/email"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:background="@drawable/text_area"
@@ -68,12 +68,11 @@
         android:text="Email"
         android:textColor="#000"
         android:textSize="21sp"
-        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <!--facebook sign in-->
 
@@ -89,8 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <TextView
         android:id="@+id/signInFB"
@@ -149,8 +147,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.419" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <!--middle divider-->
     <ImageView

@@ -12,8 +12,8 @@
         android:layout_height="match_parent"
         android:overScrollMode="never"
         android:scrollbars="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-141dp">
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="246dp">
 
         <!-- Your content goes here -->
         <LinearLayout
@@ -24,9 +24,9 @@
             <!-- Add your views (e.g., TextViews, Buttons, etc.) here -->
             <!--email title-->
             <androidx.cardview.widget.CardView
-                android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="5dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardElevation="0dp">
 
@@ -48,204 +48,212 @@
 
             </androidx.cardview.widget.CardView>
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/selectPhoto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/selectphoto"/>
+
 
             <TextView
                 android:id="@+id/txtE"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
                 android:text="Email"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginLeft="30dp"/>
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/Email"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/white_button"
                 android:hint="johndoe@gmail.com"
-                android:textColorHint="@color/hint"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
                 android:padding="15dp"
-                android:layout_marginBottom="5dp"/>
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent2" />
 
             <TextView
                 android:id="@+id/txtF"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
                 android:text="First Name"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginLeft="30dp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/First"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/white_button"
                 android:hint="John"
-                android:textColorHint="@color/hint"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
                 android:padding="15dp"
-                android:layout_marginBottom="5dp"/>
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent2" />
 
             <TextView
                 android:id="@+id/txtL"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
                 android:text="Last Name"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginLeft="30dp"/>
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/Last"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/white_button"
                 android:hint="Doe"
-                android:textColorHint="@color/hint"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
                 android:padding="15dp"
-                android:layout_marginBottom="5dp"/>
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent2" />
 
             <TextView
                 android:id="@+id/txtD"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
                 android:text="DoB"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginLeft="30dp"/>
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/DoB"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/white_button"
                 android:hint="mm/dd/yyyy"
-                android:textColorHint="@color/hint"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
                 android:padding="15dp"
-                android:layout_marginBottom="5dp"/>
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent2" />
 
             <TextView
                 android:id="@+id/txtC"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
                 android:text="Country"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginLeft="30dp"/>
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/Country"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/white_button"
                 android:hint="Select Your Country"
-                android:textColorHint="@color/hint"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
                 android:padding="15dp"
-                android:layout_marginBottom="5dp"/>
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent2" />
 
             <TextView
                 android:id="@+id/txtU"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
                 android:text="Username"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginLeft="30dp"/>
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/Username"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/white_button"
                 android:hint="the_johndoe"
-                android:textColorHint="@color/hint"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
                 android:padding="15dp"
-                android:layout_marginBottom="5dp"/>
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent2" />
 
             <TextView
                 android:id="@+id/txtP"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
                 android:text="Password"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginLeft="30dp"/>
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/Password"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/white_button"
                 android:hint="********"
-                android:textColorHint="@color/hint"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
                 android:padding="15dp"
-                android:layout_marginBottom="5dp"/>
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent2" />
 
             <TextView
                 android:id="@+id/txtCP"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
                 android:text="Confirm Password"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginLeft="30dp"/>
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/CPassword"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
                 android:background="@drawable/white_button"
                 android:hint="********"
-                android:textColorHint="@color/hint"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
                 android:padding="15dp"
-                android:layout_marginBottom="40dp"/>
-
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent2" />
 
 
             <Button
                 android:id="@+id/agreeBtn"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/custom_buttons"
-                android:text="T &amp; C AGREEMENT"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_buttons"
+                android:text="T &amp; C AGREEMENT"
                 android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/regBtn"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:background="@drawable/custom_buttons"
                 android:text="REGISTER"
-                android:layout_gravity="center"
                 android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/regDisclamer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="By Signing up, you agree to Photo's terms of Service and privacy Policy"
-                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:layout_marginLeft="20dp"/>
+                android:text="By Signing up, you agree to Photo's terms of Service and privacy Policy"
+                android:textColor="@color/black" />
 
 
         </LinearLayout>

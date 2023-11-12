@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738038189880",
+    "project_id": "taptap-578dc",
+    "storage_bucket": "taptap-578dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738038189880:android:55ecbbea15d41250cd7bcd",
+        "android_client_info": {
+          "package_name": "com.ambasolutions.taptap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsvfdKAb16pg_A59IDz2nlBPfOP-589xQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

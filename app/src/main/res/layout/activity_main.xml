@@ -46,7 +46,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/custom_buttons"
-        android:backgroundTint="@color/buttonBackgroundTint"
+        android:backgroundTint="@color/primary"
         android:text="REGISTER"
         android:textAlignment="center"
         android:textColor="#fff"
