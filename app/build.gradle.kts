@@ -50,12 +50,14 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.5")
+    implementation ("com.google.android.material:material:1.10.0")
+
 
     // OkHttp for making HTTP requests
-    implementation ("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation ("com.squareup.okhttp3:okhttp:4.10.0")
 
     // GSON for JSON parsing
-    implementation ("com.google.code.gson:gson:2.8.9")
+    implementation ("com.google.code.gson:gson:2.10.1")
 
     // Stripe SDK
     implementation("com.stripe:stripe-android:20.34.4")
@@ -72,8 +74,11 @@ dependencies {
     // picasso
     implementation ("com.squareup.picasso:picasso:2.71828")
 
-    // groupie
-//    implementation("com.github.lisawray.groupie:groupie:2.10.1")
+    // stripe
+    implementation ("com.stripe:stripe-android:20.34.4")
+
+    // google pay
+    implementation ("com.google.android.gms:play-services-wallet:19.2.1")
 
     // design library
     implementation ("com.google.android.material:material:1.10.0")
@@ -82,7 +87,7 @@ dependencies {
     implementation ("de.hdodenhof:circleimageview:3.1.0")
 
     // glide
-    implementation("com.github.bumptech.glide:glide:4.11.0")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
 
     implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    tools:context=".LoginActivity">
+    tools:context=".views.LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,19 +43,40 @@
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="20dp"
-                    app:srcCompat="@drawable/bck" />
+                    android:layout_marginLeft="20dp"/>
 
             </androidx.cardview.widget.CardView>
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/selectPhoto"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/selectphoto"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".views.LoginActivity"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/selectphoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/stripe_ic_photo_camera"
+                    android:backgroundTint="@color/primary"
+                    app:layout_constraintBottom_toBottomOf="@+id/selectPhoto"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/selectPhoto"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="TODO" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/selectPhoto"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             <TextView

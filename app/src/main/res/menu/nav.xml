@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/naira"
+        android:title="naira"
+        android:icon="@drawable/naira_sign_solid"/>
+
+    <item
+        android:id="@+id/search"
+        android:title="search"
+        android:icon="@drawable/baseline_search_24"/>
+
+    <item
+        android:id="@+id/qPay"
+        android:title="Quick Pay"
+        android:icon="@drawable/pay"/>
+
+    <item
+        android:id="@+id/chat"
+        android:title="chats"
+        android:icon="@drawable/chat_bubble"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="profile"
+        android:icon="@drawable/baseline_person_pin_24"/>
+
+</menu>

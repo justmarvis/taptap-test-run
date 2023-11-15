@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,49 +15,61 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TapTap"
         tools:targetApi="31">
-
-
         <activity
-            android:name=".ChattingActivity"
-            android:exported="false" />
+            android:name=".views.PaymentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="com.google.android.gms.wallet.api.enabled"
+                android:value="true" />
+        </activity>
         <activity
-            android:name=".ChatActivity"
+            android:name=".views.ChattingActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ChatActivity" />
+        </activity>
+        <activity
+            android:name=".views.ChatActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name=".views.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".LauncherActivity"
             android:exported="false" />
         <activity
-            android:name=".TapPayActivity"
+            android:name=".views.TapPayActivity"
             android:exported="false">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PayActivity"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.PayActivity" />
         </activity>
         <activity
-            android:name=".ContactActivity"
+            android:name=".views.ContactActivity"
             android:exported="false">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ChatActivity"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ChatActivity" />
         </activity>
         <activity
-            android:name=".PayActivity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".LoginActivity"
+            android:name=".views.PayActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

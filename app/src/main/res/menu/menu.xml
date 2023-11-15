@@ -5,10 +5,10 @@
 
     <item   android:id="@+id/contacts"
             android:title="Contacts"
-            app:showAsAction="ifRoom" />
+            app:showAsAction="always" />
 
     <item   android:id="@+id/logout"
             android:title="Log out"
-            app:showAsAction="ifRoom"/>
+            app:showAsAction="never"/>
 
 </menu>

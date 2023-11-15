@@ -5,52 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ChatActivity">
-
-    <RelativeLayout
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:id="@+id/chats"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:padding="15dp">
-
-            <TextView
-                android:id="@+id/userName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Chats"
-                android:textSize="20sp"
-                android:layout_weight="80"
-                android:textColor="@color/black"
-                android:textAlignment="center"/>
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/divider10"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey"
-            android:layout_below="@+id/chats"/>
-
-    </RelativeLayout>
-
+    tools:context=".views.ChatActivity">
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/userRecyclerView"
+        android:id="@+id/chtRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/user_layout"
-        android:layout_below="@+id/title"
+        tools:listitem="@layout/chat_layout"
         android:layout_above="@+id/nav"/>
 
     <RelativeLayout
@@ -89,7 +51,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView18"
-                app:srcCompat="@drawable/chats"
+                app:srcCompat="@drawable/pay"
                 android:layout_weight="50"/>
 
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    tools:context=".MainActivity">
+    tools:context=".views.MainActivity">
 
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_width="160dp"
         android:layout_height="50dp"
         android:layout_marginStart="25dp"
-        android:background="@drawable/white_button"
+        android:background="@drawable/primary_bordered_button"
         android:linksClickable="false"
         android:text="LOG IN"
         android:textAlignment="center"
@@ -46,7 +46,6 @@
         android:layout_height="50dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/custom_buttons"
-        android:backgroundTint="@color/primary"
         android:text="REGISTER"
         android:textAlignment="center"
         android:textColor="#fff"

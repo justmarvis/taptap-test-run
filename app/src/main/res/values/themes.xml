@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.TapTap" parent="Theme.AppCompat">
+    <style name="Base.Theme.TapTap" parent="Theme.AppCompat.DayNight">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/accent2</item>
     </style>
 
     <style name="Theme.TapTap" parent="Base.Theme.TapTap" />

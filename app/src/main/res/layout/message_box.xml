@@ -1,37 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp">
 
-    <RelativeLayout
-        android:id="@+id/sSend"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:id="@+id/sender"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/userImage"
-            android:layout_toRightOf="@+id/txt_txt"
-            android:layout_marginLeft="10dp"
-            android:src="@mipmap/ic_launcher"/>
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
 
         <TextView
-            android:id="@+id/txt_txt"
-            android:layout_width="300dp"
+            android:id="@+id/msg_txt"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_weight="95"
             android:background="@drawable/message_box_background"
             android:padding="15dp"
             android:text="This is a sample text"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textAlignment="textEnd"
-            android:layout_marginTop="10dp"/>
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="-5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00"
+                android:id="@+id/timeStamp"
+                android:textColor="@color/accent1"
+                android:layout_below="@+id/userImage"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 
 </RelativeLayout>

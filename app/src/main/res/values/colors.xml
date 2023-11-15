@@ -3,9 +3,9 @@
     <color name="primary">#F4AA42</color>
     <color name="secondary">#000</color>
     <color name="tertiary">#6ca667</color>
-    <color name="accent1">#d1d1d1</color>
-    <color name="accent2">#f0f0f0</color>
+    <color name="complimentary">#2e2e2e</color>
+    <color name="accent1">#ABB7B7</color>
+    <color name="accent2">#f5f5f5</color>
     <color name="black">#000</color>
     <color name="white">#fff</color>
-    <color name="grey">#d1d1d1</color>
 </resources>
